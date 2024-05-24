@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/bg.jpg');
+    background-size:cover;
+    background-position-y:30%
+}
+.navbar {
+    background-color: #333;
+}
+.logo {
+    float: left; 
+    margin-top: 2px;
+}
+
+.logo img {
+    height: 40px; /* Adjust the height of the logo as needed */
+    width: auto; /* Maintain aspect ratio */
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar ul li {
+    float: right;
+}
+
+.navbar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    background-color: #555;
+}
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #b8b8b8;
+}   
+
+.stat{
+	text-align: center;
+	color: white;
+	margin-top:10px;
+}
+
+
+#registrationForm {
+    max-width: 750px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #53457967;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="#666" width="12" height="12" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M7.51 10.927l3.49 3.49c.196.195.513.195.708 0l3.49-3.49a.5.5 0 0 0-.354-.854H7.864a.5.5 0 0 0-.354.854z"/></svg>');
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 50%;
+    padding-right: 30px;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+    
+    input[type="text"],
+    input[type="number"],
+    select {
+        width: 100%;
+    }
+}
